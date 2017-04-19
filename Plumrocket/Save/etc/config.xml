@@ -1,0 +1,40 @@
+<?xml version="1.0" ?>
+<config>
+	<modules>
+		<Plumrocket_Save>
+			<version>0.0.1</version>
+		</Plumrocket_Save>
+	</modules>
+  	<frontend>
+        <routers>
+            <plumrocket_save>
+                <use>standard</use>
+                <args>
+                    <module>Plumrocket_Save</module>
+                    <frontName>save</frontName>
+                </args>
+            </plumrocket_save>
+        </routers>
+    </frontend>
+	<global>
+		<resources>
+			<plumrocket_save_setup>
+				<setup>
+					<module>Plumrocket_Save</module>
+				</setup>
+			</plumrocket_save_setup>
+		</resources>	
+		<models>
+			<plumrocket_save>
+				<resourceModel>plumrocket_save_resource</resourceModel>
+			</plumrocket_save>
+			<plumrocket_save_resource>
+				<entities>
+					<table_news>
+						<table>ign</table>
+					</table_news>
+				</entities>
+			</plumrocket_save_resource>
+		</models>
+	</global>
+</config>
